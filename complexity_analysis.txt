@@ -1,0 +1,48 @@
+COMPLEXITY ANALYSIS
+
+1. LINEAR PROBING
+
+Average Time Complexity: O(1)
+Worst Case Time Complexity: O(n)
+Space Complexity: O(n)
+
+Linear probing is simple and efficient when the load factor is low.
+However, primary clustering can increase the number of probes.
+
+
+2. QUADRATIC PROBING
+
+Average Time Complexity: O(1)
+Worst Case Time Complexity: O(n)
+Space Complexity: O(n)
+
+Quadratic probing uses squared increments to find the next position.
+It reduces primary clustering compared with linear probing.
+
+
+3. DOUBLE HASHING
+
+Average Time Complexity: O(1)
+Worst Case Time Complexity: O(n)
+Space Complexity: O(n)
+
+Double hashing uses a second hash function to determine the probe
+step. It generally provides better distribution and reduces clustering.
+
+
+LOAD FACTOR
+
+Number of elements (n) = 7
+Hash table size (m) = 8
+
+Load Factor = n / m
+
+            = 7 / 8
+
+            = 0.875
+
+            = 87.5%
+
+The load factor is high because most positions in the table are
+occupied. A high load factor increases the probability of collisions
+and can increase the number of probes required.

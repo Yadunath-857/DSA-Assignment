@@ -1,0 +1,37 @@
+COMPARISON OF COLLISION RESOLUTION TECHNIQUES
+
+                    Linear       Quadratic       Double Hashing
+
+Probe method        Sequential   i^2 increment    Second hash
+Clustering          Primary      Reduced primary  Lower clustering
+Implementation      Simple       Moderate         More complex
+Average time        O(1)         O(1)             O(1)
+Worst case          O(n)         O(n)             O(n)
+Space               O(n)         O(n)             O(n)
+
+
+SEARCH RESULTS
+
+Search ID       Linear       Quadratic       Double Hashing
+
+53              2 probes     2 probes        2 probes
+63              2 probes     2 probes        2 probes
+73              2 probes     2 probes        2 probes
+80              5 probes     3 probes        3 probes
+
+
+ANALYSIS
+
+For the given input, the load factor is 87.5%.
+
+Linear probing produced a longer search sequence for the non-existing
+ID 80.
+
+Quadratic probing required fewer probes for the non-existing ID 80.
+
+Double hashing also required fewer probes for the non-existing ID 80
+and uses a different probe sequence.
+
+The experiment shows that the choice of collision resolution technique
+affects the number of probes and therefore affects hash table
+performance.

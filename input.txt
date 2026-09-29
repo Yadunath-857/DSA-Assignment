@@ -1,0 +1,15 @@
+DSA Assignment 2 - Hashing
+
+Problem:
+A railway booking system generates the following booking IDs:
+
+23 43 13 33 53 63 73
+
+Hash table size:
+8
+
+Primary hash function:
+h(k) = k % 8
+
+Search IDs:
+53 63 73 80
